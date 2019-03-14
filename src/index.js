@@ -549,11 +549,21 @@ export default class Endless {
    * @desc
    * Iterator function for an Endless instance
    * Use at your own risk.
+   * @example
+   * const c = new Endless(x => x);
+   * let i = 0;
+   * for(let x of c){
+   *  console.log(x);
+   *  if(i++ > 10) break;
+   * }
    */
   [Symbol.iterator]() {
     let i = 0;
     return {
-      next: () => this[i++],
+      next: () => ({
+        value: this[i++],
+        done: false,
+      }),
     };
   }
 }
