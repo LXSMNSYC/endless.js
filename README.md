@@ -26,6 +26,21 @@ CDN
 <script style="https://cdn.jsdelivr.net/npm/endless-js/dist/index.min.js"></script>
 ```
 
+## Usage 
+
+Endless behaves similarly to a normal Array instance. The only difference is that Endless can only be constructed given a function that produces values.
+
+```js
+const example = new Endless(x => x); // [0, 1, 2, 3, 4, 5, ...]
+```
+
+You can set/get through brackets notation:
+
+```js
+example[0] = 100;
+example[0]; // 100
+```
+
 ## Documentation
 
 [![Inline docs](http://inch-ci.org/github/lxsmnsyc/endless.js.svg?branch=master)](http://inch-ci.org/github/lxsmnsyc/endless.js)
