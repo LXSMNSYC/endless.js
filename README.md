@@ -2,6 +2,11 @@
 
 Infinite List in JS similar to Haskell's InfList
 
+[![NPM](https://nodei.co/npm/endless-js.png)](https://nodei.co/npm/endless-js/)
+
+[![](https://data.jsdelivr.com/v1/package/npm/endless-js/badge)](https://www.jsdelivr.com/package/npm/endless-js)
+[![HitCount](http://hits.dwyl.io/lxsmnsyc/endless.js.svg)](http://hits.dwyl.io/lxsmnsyc/endless.js)
+
 | Platform | Build Status |
 | --- | --- |
 | Linux | [![Build Status](https://travis-ci.org/LXSMNSYC/endless.js.svg?branch=master)](https://travis-ci.org/LXSMNSYC/endless.js) |
