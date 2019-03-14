@@ -338,7 +338,9 @@ var Endless = (function () {
      * @return {Endless}
      */
     startWith(arr) {
-      return new Endless(x => (arr.length > x ? arr[x] : this[x - arr.length]));
+      const copy = arr.slice(0);
+      const size = arr.length;
+      return new Endless(x => (size > x ? copy[x] : this[x - size]));
     }
 
     /**
@@ -465,7 +467,8 @@ var Endless = (function () {
      * @return {Endless}
      */
     intercalate(values) {
-      return this.flatMap(x => [x, ...values]);
+      const copy = values.slice(0);
+      return this.flatMap(x => [x].concat(copy));
     }
 
     /**
@@ -505,8 +508,9 @@ var Endless = (function () {
      * @return {Endless}
      */
     static cycle(arr) {
+      const copy = arr.slice(0);
       const size = arr.length;
-      return new Endless(x => arr[x % size]);
+      return new Endless(x => copy[x % size]);
     }
 
     /**
