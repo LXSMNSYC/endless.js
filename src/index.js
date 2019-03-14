@@ -240,7 +240,7 @@ export default class Endless {
    * @desc
    * Deletes the first element that satisfy the predicate.
    * @example
-   * const ex = new Endless(x => x).delete(x => x % 2 === 0);
+   * const ex = new Endless(x => x).deleteBy(x => x > 0 && x % 2 === 0);
    * ex.take(5); // [0, 1, 3, 4, 5]
    * @param {DeleteByCallback} expr
    * @return {Endless}
