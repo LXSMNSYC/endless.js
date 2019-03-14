@@ -1,6 +1,6 @@
 {
   "name": "endless-js",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Infinite List in JS",
   "main": "index.js",
   "dependencies": {},
