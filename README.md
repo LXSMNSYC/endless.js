@@ -1,4 +1,5 @@
 # endless.js
+
 Infinite List in JS similar to Haskell's InfList
 
 | Platform | Build Status |
@@ -11,7 +12,22 @@ Infinite List in JS similar to Haskell's InfList
 [![Known Vulnerabilities](https://snyk.io/test/github/LXSMNSYC/endless.js/badge.svg?targetFile=package.json)](https://snyk.io/test/github/LXSMNSYC/endless.js?targetFile=package.json)
 [![devDependencies Status](https://david-dm.org/lxsmnsyc/endless.js/dev-status.svg)](https://david-dm.org/lxsmnsyc/endless.js?type=dev)
 
-## Documentation 
+## Install
+
+NPM
+
+```bash
+npm i endless-js
+```
+
+CDN
+
+```html
+<script style="https://cdn.jsdelivr.net/npm/endless-js/dist/index.min.js"></script>
+```
+
+## Documentation
+
 [![Inline docs](http://inch-ci.org/github/lxsmnsyc/endless.js.svg?branch=master)](http://inch-ci.org/github/lxsmnsyc/endless.js)
 
 Online documentation available at the [Official endless.js docs site](https://lxsmnsyc.github.io/endless.js)
